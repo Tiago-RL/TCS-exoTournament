@@ -8,6 +8,7 @@ public class Swordsman extends AbstractPlayer {
 
 	public Swordsman(String name) {
 		super(100, 5);
+		setName(name);
 	}
 
 	@Override

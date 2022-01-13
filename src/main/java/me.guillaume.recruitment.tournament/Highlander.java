@@ -8,6 +8,7 @@ public class Highlander extends AbstractPlayer {
 
 	public Highlander(String name) {
 		super(150, 12);
+		setName(name);
 	}
 
 	@Override
