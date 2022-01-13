@@ -1,6 +1,6 @@
 package me.guillaume.recruitment.tournament;
 
-public class Highlander extends AbstractPlayer{
+public class Highlander extends AbstractPlayer {
 
 	public Highlander() {
 		super(150, 12);
@@ -11,8 +11,12 @@ public class Highlander extends AbstractPlayer{
 	}
 
 	@Override
-	public Highlander equip(String equipement){
+	public Highlander equip(String equipement) {
+		addEquipement(equipement);
+		return this;
+	}
 
-		return null;
+	public void addEquipement(String equipement) {
+		equipements.add(equipement);
 	}
 }
