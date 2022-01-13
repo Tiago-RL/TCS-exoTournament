@@ -17,6 +17,11 @@ public class Swordsman extends AbstractPlayer {
 	}
 
 	public void addEquipement(String equipement) {
+		if (equipement.equals("armor")){
+			setDamageReduce(3);
+			setDamagePerHit(getDamagePerHit()-1);
+		}
+
 		equipements.add(equipement);
 	}
 }
